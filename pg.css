@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metropolis:wght@400;500;600;700&display=swap');
+
+
 :root{
-  --prcolor: #4D80CD;
   --fontf: Metropolis, Poppins, Arial, sans-serif;
   --font: Metropolis-g;
   --fontw: Metropolis-g;
 }
 
-@font-face{
-  font-family: Poppins;
-  src: url('Fonts/Poppins-Medium.ttf');
-  
-  }
 
 @font-face{
 	font-family: Metropolis;
@@ -45,6 +44,7 @@ header{
 	background: #083982;
 	position: relative;
 	width: 100%;
+	height: 100px;
 	padding: 5px;
 	color: white;
 	
@@ -58,14 +58,14 @@ header .nav{
   
 }
 
-
-.nav .Logo{
-	font-size: 35px;
-	font-family: var(--fontw);
-	margin-left: 25px;
-	color: white;
+ .Logo{
+	width: 200px;
+	height: 200px;
+	border: none;
+	position: relative;
+	left: -4px;
+	top: -25px;
 }
-
 
 
 .nav #menu-list li{
@@ -76,7 +76,8 @@ header .nav{
 #menu-list {
 	padding: 5px;
 	margin: 5px;
-	
+	position: relative;
+	top: -50px;	
 }
 .nav #menu-list li .activa{
 	/*I made use of a transition here*/
@@ -91,22 +92,12 @@ header .nav{
 
 }
 
-/*menu bar styling*/
-
-.checkbtn{
-  display: none;
-  
-}
-#check{
-	display: none;
-}
-
 
 /*section one styling*/
 
 .section-1{
 	display: flex;
-	background-image: url('../images/bg-pic3.jpg');
+	background-image: url('bg-pic3.jpg');
 	height: 100vh;
 	background-size: cover;
 	background-position:center ;
@@ -121,7 +112,7 @@ header .nav{
 
 .max-width .content-1, .content-2, .content-3{
 	font-size: 37px;
-	font-family: Metropolis-g;
+	font-family: Metropolis-g, Metropolis;
 	color: white;
 }
 
@@ -151,16 +142,26 @@ header .nav{
 	
 	
 	.section-2{
-		background: white;   
-	 padding: 70px 0;
+		background: #F0F1EC;   
+	 padding: 40px 0;
 	  display: flex;
 	  width: 100%;
-	  height: 500px;
+	  flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
 	}
 	
-	
+.logo{
+	font-size: 35px;
+	color: black;
+	border: 2px solid black;
+	padding: 20px 10px;
+	margin-bottom: 5px;
+	font-family: Metropolis-g, Metropolis;
+	font-weight: 500;
+	text-align: center;
+}	
 	
  .photo{
 		width: 600px;
@@ -170,16 +171,19 @@ header .nav{
 
 span.time{
 	  color: #083982;
+	  width: 100%;
 		font-size: 42px;
 		font-family: var(--fontw);
 		font-weight: 700;
 	  
 	}
+
+
 .title{
     font-family: var(--fontw);
 		text-align: center;
 		padding-top: 30px;
-    margin-top: 20px;
+    margin-top: 0px;
     display: flex;
   	flex-direction: column;
 		justify-content: center;
@@ -189,9 +193,7 @@ span.time{
 
  .text{
 	font-size: 20px;
-	width: 80%;
-	margin: 15% 10% 0 10%;
-	
+	width: 50%;
 }
 
 
@@ -207,8 +209,8 @@ span.time{
 }
 
 .activ:hover{
-	  color: black;
-		border: 1px solid black;	
+	  color: #083982;
+		border: 1px solid #083982;	
 		background: none;
 	
 	}
@@ -223,11 +225,30 @@ span.time{
 	
 }
 
+.section-3 .btn{
+	display: inline-block;
+	text-decoration: none;
+	background: #BBDEFB;
+	color: #083982;
+	padding: 9px 15px;
+	margin-top: 7px;
+	font-size: 20px;
+	border-radius: 4px;
+	transition: all 0.2s;
+	
+}
 
+.section-3 .btn:hover{
+	  color: white;
+		border: 1px solid white;	
+		background: none;
+	
+	}
 .section-3 .max-width{
 	  display: flex;
 	  height: 500px;
-	  margin-top: 5%;
+	  margin-top: 10%;
+	  padding-bottom: 10%;
     align-items: center;
     justify-content: space-around;
     
@@ -235,7 +256,6 @@ span.time{
 .section-3 .column-left .photo{
 		width: 500px;
 		height: 500px;
-		margin-top: 10%;
 		border-radius: 0;
 		border: 2px solid white;
 	}
@@ -250,6 +270,7 @@ span.time{
 		color: white;
 		font-size: 15px;
 	}
+
 .services-title{
     text-align: center;
 	
@@ -287,19 +308,19 @@ span.time{
 .section-4  .content-3{
   font-size: 31px;
   color: #083982;
-  font-family: Metropolis-g;
+  font-family: Metropolis-g, Metropolis;
   	
 }
 
 .section-5{
-		background: white;
+		background: #F0F1EC;
 		width: 100%;
 		height: 150vh;
 		margin: 0;
 		padding: 20px;
 		display: flex;
 		align-items: center;
-		color: white;
+		color: black;
 		
 	}
 	
@@ -311,7 +332,7 @@ span.time{
 	
 	.section-5 .max-width .title{
 		color: black;
-		font-family: Metropolis-g;
+		font-family: Metropolis-g, Metropolis;
 		font-size: 40px;
 	
 	}
@@ -337,7 +358,8 @@ span.time{
 .section-5 .contact-section .content-3{
 	font-size: 25px;
 	margin-bottom: 20px;
-	font-family: Metropolis-g;
+	color: black;
+	font-family: Metropolis-g, Metropolis;
 }
 
 
@@ -366,7 +388,7 @@ span.time{
 
 .section-5 .contact-section .column-left .icons .row .info .head{
 	font-size: 22px;
-	font-family: Metropolis-g;    
+	font-family: Metropolis-g, Metropolis;    
 }
 
 
@@ -435,6 +457,9 @@ span.time{
 	align-items: center;
 }
 
+.section-5 .column-right .content-3, .section-5 .column-right{
+	color: black;
+}
 .button-area button{
 	color: white;
 	display: block;
@@ -457,86 +482,122 @@ span.time{
 	
 }
 
+.section-6{
+	width: 100%;
+	display: flex;
+	padding: 0 20px;
+	padding-top: 20px;
+	background: #083982;
+	margin-top: 10px;
+}
+
+.section-6 .max-width{
+  margin: 10% 0;	
+}
+
+.section-6 img{
+	width: 400px;
+	height: 400px;
+	border: 2px solid white;
+
+}
+
 
 footer{
 	background: black;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	padding: 20px;
-	font-size: 18px;
-	height: 100px;
+	font-size: 20px;
+	height: 150px;
 	text-align: center;
 }
 
-footer span a{
-	color: #4d80cd;
-	line-height: 50px;
-	
+footer span, span a{
+	font-size: 20px;
+	font-family: Metropolis;
+	text-align: center;
+	color: white;
+	margin-top: 10px;
 }
 
-footer span, span i{
+footer span a{
+	color: #BBDEFB;
+}
+
+footer span a:hover{
 	color: white;
-	line-height: 50px;
-}	
+	text-decoration: underline;
+}
+
+
 @media (max-width: 952px){
 	
 	
 	header{
 	padding: 20px 0;
-}
-
-
-
- .checkbtn, .checkbtn i{
- 	display:block;
-    color: white;
-    cursor: pointer;
-   font-size: 120%;
-   z-index: 5;
-   padding: 5px;
-   margin-right: 10px;
-}
-
+	height: 200px;
 	
-#check:checked ~ ul	{
-	left: 0;
+}
+
+
+.nav{
+
 
 }
-	.nav #menu-list{
-		position: fixed;
-		height: 100vh;
-    width: 100%; 
-		left: -100%;
-		 top: 80px;
-		 bottom: 0;
-		background: white;
-		margin: 0;
+
+.Logo{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	left: -5px;
+	top: -30px;
+	border: none;
+}
+
+
+
+ .nav #menu-list{
+		display: flex;
+   flex-direction: row;
+   align-items: center;
+   align-content: center;
+   position: relative;
+   left: -175px;
+   top: 20px;
+   border: 2px solid white;
+   padding: 0 10px 0 10px;
+   line-height: 50px;
 	
 	}
+	
+	
 	
 	.nav #menu-list li{
-		display: block;
-		text-align: center;
-		padding-top: 30px;
-	}
-	.nav #menu-list li .activa{
-		color: black;
-		display: inline-block;
-		margin: 30px 0;
-		font-size: 25px;
-	}
-	
-	.nav #menu-list li .activa:hover{
-		color: white;
-		background: linear-gradient(#3A2184, #392B66);
-		padding: 10px;
-		border-radius: 10px;
-	}
-	
-	
+  padding: 5px;
+
+}
+
+.nav #menu-list li .activa{
+font-size: 20px;
+transition-property: color;
+transition-duration: 0s;
+}	
+
+.nav #menu-list li .activa:hover{
+	border-radius: 5px;
+	color: #1E96F3;
+	background: white;
+	padding: 10px;
+}	
+
+
 	.section-1{
 	display: flex;
 	background: #083982; 
-   
+  height: 70vh; 
 }
 
 .section-1 .max-width{
@@ -556,23 +617,18 @@ footer span, span i{
 	margin: 5px 0;
 }
 
+
 .section-2{
 		display: flex;
 		flex-direction: column;
-		margin: 10% 0;
-		align-items: center;
-		justify-content: center;	
+		width: 100%;
+		padding: 40px 0;
+		align-items: center;	
 	}
 	
 	
-	.photo{
-		width: 450px;
-		height: 450px;
-		border-radius: 50% 50% 50% 50%; 
-   
-		}
 		 .text{
-	font-size: 19px;
+	font-size: 20px;
 	width: 80%;
 	margin: 0 10%;
 	text-align:  center;
@@ -580,11 +636,13 @@ footer span, span i{
 }
 
 .section-3{
-		border: 2px solid red;
-		margin: 10% 0 0 0;
-		height: 320vh;
+		height: 330vh;
 	}
-	
+
+
+.section-3 .btn{
+	transform: translateY(480px);
+}	
 	.section-3 .column-left .photo{
 		width: 400px;
 		height: 400px;
@@ -595,7 +653,6 @@ footer span, span i{
 	
 	
 .services-title{
- 
 	text-align: center;
 	padding-bottom: 30px;
 	
@@ -605,7 +662,7 @@ footer span, span i{
 	  display: flex;
 	  flex-direction: column;
 	  height: 500px;
-	  margin-top: 15%;
+	  margin-bottom: 24%;
     align-items: center;
     justify-content: center;
     
@@ -632,7 +689,48 @@ footer span, span i{
 	color: black;
 }
 
+.section-5 .contact-section{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: left;
+	}
+	
+.section-5 .content-3{
+	display: none;
+}	
+
+ .section-5 .contact-section .column-left p{ 
+	 width: 100%;
+	 font-size: 20px;
+	  } 
+	
+	.section-5 .contact-section .column-left{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}	
+.section-5 .column-right form .fields{
+	display: flex;
+  flex-direction: column;
+}
+
+.section-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
   
+}
+.section-6 .max-width img{
+  width: 400px;
+  height: 400px;
+  margin: 20px 0;
+}
+.section-6 .max-width{
+  margin: 20% 0;	
+}  
 }
 
 @media (max-width: 600px){
@@ -666,4 +764,4 @@ footer span, span i{
 	}
 	
 	
-	}
+	}z
